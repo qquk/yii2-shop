@@ -20,25 +20,41 @@ use yii\web\IdentityInterface;
  * @property integer $created_at
  * @property integer $updated_at
  * @property string $password write-only password
+ * @property string $confirm_email_token
  */
 class User extends ActiveRecord implements IdentityInterface
 {
-    const STATUS_DELETED = 0;
+    const STATUS_WAIT = 0;
     const STATUS_ACTIVE = 10;
 
 
-    public static function signup(string $username, string $email, string $password): self
+    public static function requestSignup(string $username, string $email, string $password): self
     {
         $user = new static();
         $user->username = $username;
         $user->email = $email;
         $user->setPassword(!empty($password) ? $password : Yii::$app->security->generateRandomString());
         $user->generateAuthKey();
-        $user->status = self::STATUS_ACTIVE;
+        $user->status = self::STATUS_WAIT;
         $user->created_at = time();
+        $user->generateConfirmEmailToken();
         $user->auth_key = Yii::$app->security->generateRandomString();
         return $user;
     }
+
+
+    public function confirmSignup(){
+        if(!$this->isWait()){
+            throw new \DomainException("User is active already");
+        }
+        $this->status = self::STATUS_ACTIVE;
+        $this->removeConfirmEmailToken();
+    }
+
+    public function generateConfirmEmailToken(){
+        $this->confirm_email_token = Yii::$app->security->generateRandomString();
+    }
+
 
     public function isActive(): bool{
         return $this->status === self::STATUS_ACTIVE;
@@ -217,5 +233,14 @@ class User extends ActiveRecord implements IdentityInterface
     public function removePasswordResetToken()
     {
         $this->password_reset_token = null;
+    }
+
+    public function removeConfirmEmailToken()
+    {
+        $this->confirm_email_token = null;
+    }
+
+    public function isWait(){
+        return $this->comfirm_email_token === self::STATUS_WAIT;
     }
 }

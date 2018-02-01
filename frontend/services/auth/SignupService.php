@@ -17,10 +17,37 @@ class SignupService
 {
     public function signup(SignupForm $form): User
     {
-        $user = User::signup($form->username, $form->email, $form->password);
-        if (!$user->save()) {
-            throw new RuntimeException("Saving error");
+        $user = User::requestSignup($form->username, $form->email, $form->password);
+        $this->save($user);
+        return $user;
+    }
+
+    public function confirm($token){
+        if(empty($token)){
+            throw new \DomainException("Emty token");
+        }
+
+        $user = $this->findByEmailConfirmToken($token);
+
+        $user->confirmSignup();
+
+        $this->save($user);
+
+    }
+
+    private function findByEmailConfirmToken(string $token): User{
+        $user = User::findOne(['email_confirm_token' => $token]);
+        if(!$user){
+            throw new \DomainException("User not found");
         }
         return $user;
     }
+
+    private function save(User $user) : void{
+        if(!$user->save()){
+            throw new RuntimeException("Saving error");
+        }
+    }
+
+
 }

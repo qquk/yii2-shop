@@ -163,26 +163,7 @@ class SiteController extends Controller
         return $this->render('about');
     }
 
-    /**
-     * Signs user up.
-     *
-     * @return mixed
-     */
-    public function actionSignup()
-    {
 
-        $form = new SignupForm();
-        if ($form->load(Yii::$app->request->post()) && $form->validate()) {
-            $user = (new SignupService())->signup($form);
-            if (Yii::$app->getUser()->login($user)) {
-                return $this->goHome();
-            }
-        }
-
-        return $this->render('signup', [
-            'model' => $form,
-        ]);
-    }
 
     /**
      * Requests password reset.
@@ -207,6 +188,8 @@ class SiteController extends Controller
             'model' => $form,
         ]);
     }
+
+
 
     /**
      * Resets password.
