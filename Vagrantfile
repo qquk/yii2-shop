@@ -7,8 +7,9 @@ required_plugins.each do |plugin|
 end
 
 domains = {
-  frontend: 'shop.dev',
-  backend:  'admin.shop.dev'
+  frontend: 'shop.loc',
+  backend:  'admin.shop.loc',
+  api:  'api.shop.loc'
 }
 
 config = {
@@ -73,5 +74,5 @@ Vagrant.configure(2) do |config|
   config.vm.provision 'shell', path: './vagrant/provision/always-as-root.sh', run: 'always'
 
   # post-install message (vagrant console)
-  config.vm.post_up_message = "Frontend URL: http://#{domains[:frontend]}\nBackend URL: http://#{domains[:backend]}"
+  config.vm.post_up_message = "Frontend URL: http://#{domains[:frontend]}\nBackend URL: http://#{domains[:backend]}\nAPi URL: http://#{domains[:api]}"
 end

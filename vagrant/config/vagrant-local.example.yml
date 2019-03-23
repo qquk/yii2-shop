@@ -1,5 +1,5 @@
 # Your personal GitHub token
-github_token: d8584f2b287ebf3eb7005e5998c0605e8ffdb7be
+github_token: c42614bac6c42c616939d290c246f09caa23c0eb
 # Read more: https://github.com/blog/1509-personal-api-tokens
 # You can generate it here: https://github.com/settings/tokens
 
@@ -19,4 +19,4 @@ ip: 192.168.83.137
 cpus: 1
 
 # Virtual machine RAM
-memory: 1024
+memory: 2048

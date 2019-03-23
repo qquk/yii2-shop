@@ -10,9 +10,10 @@ namespace frontend\controllers\auth;
 
 
 use yii\web\Controller;
-use frontend\services\auth\SignupService;
-use frontend\forms\SignupForm;
+use shop\services\auth\SignupService;
+use shop\forms\auth\SignupForm;
 use Yii;
+use yii\filters\AccessControl;
 
 class SignupController extends Controller
 {
@@ -25,18 +26,39 @@ class SignupController extends Controller
         $this->service = $service;
     }
 
-    public function actionSignup()
-    {
 
+    public function behaviors(): array
+    {
+        return [
+            'access' => [
+                'class' => AccessControl::className(),
+                'only' => ['request'],
+                'rules' => [
+                    [
+                        'actions' => ['request'],
+                        'allow' => true,
+                        'roles' => ['?'],
+                    ],
+                ],
+            ],
+        ];
+    }
+
+
+    public function actionRequest()
+    {
         $form = new SignupForm();
         if ($form->load(Yii::$app->request->post()) && $form->validate()) {
-            $user = $this->service->signup($form);
-            if (Yii::$app->getUser()->login($user)) {
+            try {
+                $this->service->signup($form);
+                Yii::$app->session->setFlash('success', 'Check your email for further instructions.');
                 return $this->goHome();
+            } catch (\DomainException $e) {
+                Yii::$app->errorHandler->logException($e);
+                Yii::$app->session->setFlash('error', $e->getMessage());
             }
         }
-
-        return $this->render('signup', [
+        return $this->render('request', [
             'model' => $form,
         ]);
     }

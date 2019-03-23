@@ -1,0 +1,28 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: Admin
+ * Date: 03.03.2019
+ * Time: 15:00
+ */
+
+namespace shop\entities;
+
+
+trait EventTrait
+{
+    private $events = [];
+
+    protected function recordEvent($event): void
+    {
+        $this->events[] = $event;
+    }
+
+    public function releaseEvents(): array
+    {
+        $events = $this->events;
+        $this->events = [];
+        return $events;
+    }
+
+}

@@ -7,6 +7,7 @@
 
 namespace yii\base;
 
+use api\controllers\SiteController;
 use Yii;
 use yii\di\ServiceLocator;
 
@@ -232,7 +233,7 @@ class Module extends ServiceLocator
      * Sets the root directory of the module.
      * This method can only be invoked at the beginning of the constructor.
      * @param string $path the root directory of the module. This can be either a directory name or a [path alias](guide:concept-aliases).
-     * @throws InvalidParamException if the directory does not exist.
+     * @throws InvalidArgumentException if the directory does not exist.
      */
     public function setBasePath($path)
     {
@@ -241,7 +242,7 @@ class Module extends ServiceLocator
         if ($p !== false && is_dir($p)) {
             $this->_basePath = $p;
         } else {
-            throw new InvalidParamException("The directory does not exist: $path");
+            throw new InvalidArgumentException("The directory does not exist: $path");
         }
     }
 
@@ -250,7 +251,7 @@ class Module extends ServiceLocator
      * Note that in order for this method to return a value, you must define
      * an alias for the root namespace of [[controllerNamespace]].
      * @return string the directory that contains the controller classes.
-     * @throws InvalidParamException if there is no alias defined for the root namespace of [[controllerNamespace]].
+     * @throws InvalidArgumentException if there is no alias defined for the root namespace of [[controllerNamespace]].
      */
     public function getControllerPath()
     {
@@ -273,7 +274,7 @@ class Module extends ServiceLocator
     /**
      * Sets the directory that contains the view files.
      * @param string $path the root directory of view files.
-     * @throws InvalidParamException if the directory is invalid.
+     * @throws InvalidArgumentException if the directory is invalid.
      */
     public function setViewPath($path)
     {
@@ -296,7 +297,7 @@ class Module extends ServiceLocator
     /**
      * Sets the directory that contains the layout files.
      * @param string $path the root directory or [path alias](guide:concept-aliases) of layout files.
-     * @throws InvalidParamException if the directory is invalid
+     * @throws InvalidArgumentException if the directory is invalid
      */
     public function setLayoutPath($path)
     {
@@ -422,7 +423,7 @@ class Module extends ServiceLocator
             if ($this->_modules[$id] instanceof self) {
                 return $this->_modules[$id];
             } elseif ($load) {
-                Yii::trace("Loading module: $id", __METHOD__);
+                Yii::debug("Loading module: $id", __METHOD__);
                 /* @var $module Module */
                 $module = Yii::createObject($this->_modules[$id], [$id, $this]);
                 $module->setInstance($module);
@@ -595,7 +596,9 @@ class Module extends ServiceLocator
 
         $controller = $this->createControllerByID($id);
         if ($controller === null && $route !== '') {
+
             $controller = $this->createControllerByID($id . '/' . $route);
+
             $route = '';
         }
 
@@ -617,6 +620,8 @@ class Module extends ServiceLocator
      */
     public function createControllerByID($id)
     {
+
+
         $pos = strrpos($id, '/');
         if ($pos === false) {
             $prefix = '';
@@ -633,7 +638,9 @@ class Module extends ServiceLocator
             return null;
         }
 
-        $className = str_replace(' ', '', ucwords(str_replace('-', ' ', $className))) . 'Controller';
+        $className = preg_replace_callback('%-([a-z0-9_])%i', function ($matches) {
+                return ucfirst($matches[1]);
+            }, ucfirst($className)) . 'Controller';
         $className = ltrim($this->controllerNamespace . '\\' . str_replace('/', '\\', $prefix) . $className, '\\');
         if (strpos($className, '-') !== false || !class_exists($className)) {
             return null;
@@ -647,6 +654,25 @@ class Module extends ServiceLocator
         }
 
         return null;
+    }
+
+    /**
+     * Checks if class name or prefix is incorrect
+     *
+     * @param string $className
+     * @param string $prefix
+     * @return bool
+     */
+    private function isIncorrectClassNameOrPrefix($className, $prefix)
+    {
+        if (!preg_match('%^[a-z][a-z0-9\\-_]*$%', $className)) {
+            return true;
+        }
+        if ($prefix !== '' && !preg_match('%^[a-z0-9_/]+$%i', $prefix)) {
+            return true;
+        }
+
+        return false;
     }
 
     /**
