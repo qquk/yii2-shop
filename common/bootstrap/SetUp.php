@@ -27,9 +27,6 @@ class SetUp implements BootstrapInterface
             return $app->mailer;
         });
 
-// так как в конструкторе только MailerInterfacce поэтому возюмет подхватит MailerInterface::class отсюда
-//        $container->setSingleton(PasswordResetService::class, [], [Instance::of(MailerInterface::class)]);
-
         $container->setSingleton(ContactService::class, [], [$app->params['supportEmail'], Instance::of(MailerInterface::class)]);
 
 
@@ -41,6 +38,7 @@ class SetUp implements BootstrapInterface
         $container->setSingleton(ManagerInterface::class, function () use ($app) {
             return $app->getAuthManager();
         });
+
         $container->setSingleton(EventDispatcher::class, DeferredEventDispatcher::class);
 
         $container->setSingleton(DeferredEventDispatcher::class,

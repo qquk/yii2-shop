@@ -3,7 +3,7 @@
 namespace shop\repositories\Shop;
 
 use shop\repositories\NotFoundException;
-use shop\entities\Shop\Product;
+use shop\entities\Shop\Product\Product;
 
 class ProductRepository
 {
@@ -32,5 +32,10 @@ class ProductRepository
     public function existsByBrandId($brandId): bool
     {
         return Product::find()->where(['brand_id' => $brandId])->exists();
+    }
+
+    public function existsByMainCategoryId($categoryId)
+    {
+        return Product::find()->where(['category_id' => $categoryId])->exists();
     }
 }

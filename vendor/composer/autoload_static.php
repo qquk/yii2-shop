@@ -42,6 +42,10 @@ class ComposerStaticInitfbaace5009ca430c95c85d7598735053
             'phpDocumentor\\Reflection\\' => 25,
             'paulzi\\nestedsets\\' => 18,
         ),
+        'm' => 
+        array (
+            'mihaildev\\ckeditor\\' => 19,
+        ),
         'l' => 
         array (
             'lhs\\Yii2SaveRelationsBehavior\\' => 30,
@@ -185,6 +189,10 @@ class ComposerStaticInitfbaace5009ca430c95c85d7598735053
         'paulzi\\nestedsets\\' => 
         array (
             0 => __DIR__ . '/..' . '/paulzi/yii2-nested-sets',
+        ),
+        'mihaildev\\ckeditor\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/mihaildev/yii2-ckeditor',
         ),
         'lhs\\Yii2SaveRelationsBehavior\\' => 
         array (

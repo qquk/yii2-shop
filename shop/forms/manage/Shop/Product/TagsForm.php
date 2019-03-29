@@ -1,27 +1,21 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Admin
- * Date: 25.09.2018
- * Time: 22:40
- */
 
 namespace shop\forms\manage\Shop\Product;
 
-
-use shop\entities\Shop\Product;
+use shop\entities\Shop\Product\Product;
+use shop\entities\Shop\Tag;
 use yii\base\Model;
 use yii\helpers\ArrayHelper;
 
 class TagsForm extends Model
 {
-    public $existing;
-    public $textNew;
+
+    public $tags = [];
 
     public function __construct(Product $product = null, array $config = [])
     {
         if ($product) {
-            $this->existing = ArrayHelper::getValue($product->tagAssignments, 'tag_id');
+            $this->tags = ArrayHelper::getColumn($product->tagAssignments, 'tag_id');
         }
         parent::__construct($config);
     }
@@ -29,14 +23,13 @@ class TagsForm extends Model
     public function rules()
     {
         return [
-            [['existing'], 'each', 'rule' => ['integer']],
-            [['textNew'], 'string']
+            ['tags', 'default', 'value' => []],
         ];
     }
 
-    public function getNewNames()
+    public function tagList(): array
     {
-        return array_map('trim', preg_split('#\s*,\s*#i', $this->textNew));
+        return ArrayHelper::map(Tag::find()->orderBy('name')->asArray()->all(), 'id', 'name');
     }
 
 }

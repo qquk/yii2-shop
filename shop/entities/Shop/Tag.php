@@ -2,8 +2,8 @@
 /**
  * Created by PhpStorm.
  * User: Admin
- * Date: 07.09.2018
- * Time: 13:38
+ * Date: 25.03.2019
+ * Time: 15:37
  */
 
 namespace shop\entities\Shop;
@@ -22,24 +22,24 @@ use yii\db\ActiveRecord;
 class Tag extends ActiveRecord
 {
 
-    public static function create($name, $slug) : self
+    public static function create($name, $slug): Tag
     {
         $tag = new static();
         $tag->name = $name;
         $tag->slug = $slug;
-
         return $tag;
     }
 
-    public function edit($name, $slug)
+    public function edit($name, $slug): void
     {
-        $this->name = $name;
-        $this->slug = $slug;
+      $this->name = $name;
+      $this->slug = $slug;
     }
 
-    public static function tableName()
+    public static function tableName(): string
     {
         return '{{%shop_tags}}';
     }
+
 
 }

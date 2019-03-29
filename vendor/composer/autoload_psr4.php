@@ -18,6 +18,7 @@ return array(
     'rmrevin\\yii\\fontawesome\\' => array($vendorDir . '/rmrevin/yii2-fontawesome'),
     'phpDocumentor\\Reflection\\' => array($vendorDir . '/phpdocumentor/reflection-common/src', $vendorDir . '/phpdocumentor/reflection-docblock/src', $vendorDir . '/phpdocumentor/type-resolver/src'),
     'paulzi\\nestedsets\\' => array($vendorDir . '/paulzi/yii2-nested-sets'),
+    'mihaildev\\ckeditor\\' => array($vendorDir . '/mihaildev/yii2-ckeditor'),
     'lhs\\Yii2SaveRelationsBehavior\\' => array($vendorDir . '/la-haute-societe/yii2-save-relations-behavior/src'),
     'kartik\\widgets\\' => array($vendorDir . '/kartik-v/yii2-widgets/src'),
     'kartik\\typeahead\\' => array($vendorDir . '/kartik-v/yii2-widget-typeahead/src'),

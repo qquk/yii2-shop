@@ -9,7 +9,7 @@
 namespace shop\entities\Shop\queries;
 
 
-use shop\entities\Shop\Product;
+use shop\entities\Shop\Product\Product;
 use yii\db\ActiveQuery;
 
 class ProductQuery extends ActiveQuery

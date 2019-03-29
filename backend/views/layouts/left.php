@@ -32,6 +32,8 @@
                 'items' => [
                     ['label' => 'Users', 'icon' => 'user', 'url' => ['/user/index'], 'active' => $this->context->id == 'user/index'],
                     ['label' => 'Brands', 'icon' => 'user', 'url' => ['shop/brand/index'], 'active' => $this->context->id == 'shop/brand/index'],
+                    ['label' => 'Tags', 'icon' => 'user', 'url' => ['shop/tag/index'], 'active' => $this->context->id == 'shop/tag/index'],
+                    ['label' => 'Categories', 'icon' => 'user', 'url' => ['shop/category/index'], 'active' => $this->context->id == 'shop/category/index'],
                     ['label' => 'Menu Yii2', 'options' => ['class' => 'header']],
                     ['label' => 'Gii', 'icon' => 'file-code-o', 'url' => ['/gii']],
                     ['label' => 'Debug', 'icon' => 'dashboard', 'url' => ['/debug']],

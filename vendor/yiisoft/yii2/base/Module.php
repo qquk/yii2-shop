@@ -7,7 +7,6 @@
 
 namespace yii\base;
 
-use api\controllers\SiteController;
 use Yii;
 use yii\di\ServiceLocator;
 
@@ -596,9 +595,7 @@ class Module extends ServiceLocator
 
         $controller = $this->createControllerByID($id);
         if ($controller === null && $route !== '') {
-
             $controller = $this->createControllerByID($id . '/' . $route);
-
             $route = '';
         }
 
@@ -620,8 +617,6 @@ class Module extends ServiceLocator
      */
     public function createControllerByID($id)
     {
-
-
         $pos = strrpos($id, '/');
         if ($pos === false) {
             $prefix = '';
@@ -631,10 +626,7 @@ class Module extends ServiceLocator
             $className = substr($id, $pos + 1);
         }
 
-        if (!preg_match('%^[a-z][a-z0-9\\-_]*$%', $className)) {
-            return null;
-        }
-        if ($prefix !== '' && !preg_match('%^[a-z0-9_/]+$%i', $prefix)) {
+        if ($this->isIncorrectClassNameOrPrefix($className, $prefix)) {
             return null;
         }
 

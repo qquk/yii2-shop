@@ -1,19 +1,36 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Admin
- * Date: 07.09.2018
- * Time: 14:20
- */
+
 namespace shop\repositories\Shop;
 
 use shop\entities\Shop\Tag;
+use shop\repositories\NotFoundException;
 
 class TagRepository
 {
 
-    use RepositoryTrait;
+    public function get($id): Tag
+    {
+        if (!$brand = Tag::findOne($id)) {
+            throw new NotFoundException('Tag is not found.');
+        }
+        return $brand;
+    }
 
-    public $modelClass = Tag::class;
+    public function save(Tag $tag): void
+    {
+        if (!$tag->save()) {
+            throw new \RuntimeException('Saving error.');
+        }
+    }
 
+    public function remove(Tag $tag): void
+    {
+        if (!$tag->delete()) {
+            throw new \RuntimeException('Removing error.');
+        }
+    }
+
+    public function findByName($name) {
+        return Tag::find()->where(['name' => $name])->one();
+    }
 }

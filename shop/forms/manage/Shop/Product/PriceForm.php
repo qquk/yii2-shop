@@ -1,27 +1,22 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Admin
- * Date: 25.09.2018
- * Time: 22:33
- */
 
 namespace shop\forms\manage\Shop\Product;
 
 
-use shop\entities\Shop\Product;
+use shop\entities\Shop\Product\Product;
 use yii\base\Model;
 
 class PriceForm extends Model
 {
+
     public $old;
     public $new;
 
     public function __construct(Product $product = null, array $config = [])
     {
-        if($product) {
-            $this->old = $product->old;
-            $this->new = $product->new;
+        if ($product) {
+            $this->old = $product->price_old;
+            $this->new = $product->price_new;
         }
         parent::__construct($config);
     }
@@ -30,7 +25,8 @@ class PriceForm extends Model
     {
         return [
             [['new'], 'required'],
-            [['old', 'new'], 'integer', 'min' => 0]
+            [['new', 'old'], 'integer', 'min' => 0],
         ];
     }
+
 }

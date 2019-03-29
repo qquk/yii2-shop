@@ -1,0 +1,516 @@
+2019/03/21 21:44:53 [error] 1870#1870: *4 directory index of "/app/api/web/" is forbidden, client: 192.168.83.1, server: api.shop.loc, request: "GET / HTTP/1.1", host: "api.shop.loc"
+2019/03/21 21:44:57 [error] 1870#1870: *4 directory index of "/app/api/web/" is forbidden, client: 192.168.83.1, server: api.shop.loc, request: "GET / HTTP/1.1", host: "api.shop.loc"
+2019/03/21 21:44:58 [error] 1870#1870: *4 directory index of "/app/api/web/" is forbidden, client: 192.168.83.1, server: api.shop.loc, request: "GET / HTTP/1.1", host: "api.shop.loc"
+2019/03/21 21:44:58 [error] 1870#1870: *4 directory index of "/app/api/web/" is forbidden, client: 192.168.83.1, server: api.shop.loc, request: "GET / HTTP/1.1", host: "api.shop.loc"
+2019/03/21 21:45:07 [error] 1870#1870: *4 directory index of "/app/api/web/" is forbidden, client: 192.168.83.1, server: api.shop.loc, request: "GET / HTTP/1.1", host: "api.shop.loc"
+2019/03/21 21:46:44 [error] 1870#1870: *7 directory index of "/app/api/web/" is forbidden, client: 192.168.83.1, server: api.shop.loc, request: "GET / HTTP/1.1", host: "api.shop.loc"
+2019/03/21 21:46:46 [error] 1870#1870: *7 directory index of "/app/api/web/" is forbidden, client: 192.168.83.1, server: api.shop.loc, request: "GET / HTTP/1.1", host: "api.shop.loc"
+2019/03/21 21:46:47 [error] 1870#1870: *7 directory index of "/app/api/web/" is forbidden, client: 192.168.83.1, server: api.shop.loc, request: "GET / HTTP/1.1", host: "api.shop.loc"
+2019/03/21 21:46:48 [error] 1870#1870: *7 directory index of "/app/api/web/" is forbidden, client: 192.168.83.1, server: api.shop.loc, request: "GET / HTTP/1.1", host: "api.shop.loc"
+2019/03/21 21:46:54 [error] 1870#1870: *7 directory index of "/app/api/web/" is forbidden, client: 192.168.83.1, server: api.shop.loc, request: "GET / HTTP/1.1", host: "api.shop.loc"
+2019/03/21 21:46:55 [error] 1870#1870: *7 directory index of "/app/api/web/" is forbidden, client: 192.168.83.1, server: api.shop.loc, request: "GET / HTTP/1.1", host: "api.shop.loc"
+2019/03/21 21:46:55 [error] 1870#1870: *7 directory index of "/app/api/web/" is forbidden, client: 192.168.83.1, server: api.shop.loc, request: "GET / HTTP/1.1", host: "api.shop.loc"
+2019/03/21 21:51:14 [error] 1870#1870: *10 FastCGI sent in stderr: "PHP message: PHP Warning:  require(/app/api/config/params-local.php): failed to open stream: No such file or directory in /app/api/config/main.php on line 6
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /app/api/web/index.php:0
+PHP message: PHP   2. require() /app/api/web/index.php:13
+PHP message: PHP Fatal error:  require(): Failed opening required '/app/api/config/params-local.php' (include_path='.:/usr/share/php') in /app/api/config/main.php on line 6
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /app/api/web/index.php:0
+PHP message: PHP   2. require() /app/api/web/index.php:13" while reading response header from upstream, client: 192.168.83.1, server: api.shop.loc, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.2-fpm.sock:", host: "api.shop.loc"
+2019/03/21 21:51:24 [error] 1870#1870: *10 FastCGI sent in stderr: "PHP message: PHP Warning:  require(/app/api/config/params-local.php): failed to open stream: No such file or directory in /app/api/config/main.php on line 6
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /app/api/web/index.php:0
+PHP message: PHP   2. require() /app/api/web/index.php:13
+PHP message: PHP Fatal error:  require(): Failed opening required '/app/api/config/params-local.php' (include_path='.:/usr/share/php') in /app/api/config/main.php on line 6
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /app/api/web/index.php:0
+PHP message: PHP   2. require() /app/api/web/index.php:13" while reading response header from upstream, client: 192.168.83.1, server: api.shop.loc, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.2-fpm.sock:", host: "api.shop.loc"
+2019/03/21 21:51:27 [error] 1870#1870: *10 FastCGI sent in stderr: "PHP message: PHP Warning:  require(/app/api/config/params-local.php): failed to open stream: No such file or directory in /app/api/config/main.php on line 6
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /app/api/web/index.php:0
+PHP message: PHP   2. require() /app/api/web/index.php:13
+PHP message: PHP Fatal error:  require(): Failed opening required '/app/api/config/params-local.php' (include_path='.:/usr/share/php') in /app/api/config/main.php on line 6
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /app/api/web/index.php:0
+PHP message: PHP   2. require() /app/api/web/index.php:13" while reading response header from upstream, client: 192.168.83.1, server: api.shop.loc, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.2-fpm.sock:", host: "api.shop.loc"
+2019/03/21 21:51:30 [error] 1870#1870: *10 FastCGI sent in stderr: "PHP message: PHP Warning:  require(/app/api/config/params-local.php): failed to open stream: No such file or directory in /app/api/config/main.php on line 6
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /app/api/web/index.php:0
+PHP message: PHP   2. require() /app/api/web/index.php:13
+PHP message: PHP Fatal error:  require(): Failed opening required '/app/api/config/params-local.php' (include_path='.:/usr/share/php') in /app/api/config/main.php on line 6
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /app/api/web/index.php:0
+PHP message: PHP   2. require() /app/api/web/index.php:13" while reading response header from upstream, client: 192.168.83.1, server: api.shop.loc, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.2-fpm.sock:", host: "api.shop.loc"
+2019/03/21 21:51:33 [error] 1870#1870: *10 FastCGI sent in stderr: "PHP message: PHP Warning:  require(/app/api/config/params-local.php): failed to open stream: No such file or directory in /app/api/config/main.php on line 6
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /app/api/web/index.php:0
+PHP message: PHP   2. require() /app/api/web/index.php:13
+PHP message: PHP Fatal error:  require(): Failed opening required '/app/api/config/params-local.php' (include_path='.:/usr/share/php') in /app/api/config/main.php on line 6
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /app/api/web/index.php:0
+PHP message: PHP   2. require() /app/api/web/index.php:13" while reading response header from upstream, client: 192.168.83.1, server: api.shop.loc, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.2-fpm.sock:", host: "api.shop.loc"
+2019/03/21 21:51:53 [error] 1870#1870: *10 FastCGI sent in stderr: "PHP message: PHP Warning:  require(/app/api/config/params-local.php): failed to open stream: No such file or directory in /app/api/config/main.php on line 6
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /app/api/web/index.php:0
+PHP message: PHP   2. require() /app/api/web/index.php:13
+PHP message: PHP Fatal error:  require(): Failed opening required '/app/api/config/params-local.php' (include_path='.:/usr/share/php') in /app/api/config/main.php on line 6
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /app/api/web/index.php:0
+PHP message: PHP   2. require() /app/api/web/index.php:13" while reading response header from upstream, client: 192.168.83.1, server: api.shop.loc, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.2-fpm.sock:", host: "api.shop.loc"
+2019/03/21 21:51:55 [error] 1870#1870: *10 FastCGI sent in stderr: "PHP message: PHP Warning:  require(/app/api/config/params-local.php): failed to open stream: No such file or directory in /app/api/config/main.php on line 6
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /app/api/web/index.php:0
+PHP message: PHP   2. require() /app/api/web/index.php:13
+PHP message: PHP Fatal error:  require(): Failed opening required '/app/api/config/params-local.php' (include_path='.:/usr/share/php') in /app/api/config/main.php on line 6
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /app/api/web/index.php:0
+PHP message: PHP   2. require() /app/api/web/index.php:13" while reading response header from upstream, client: 192.168.83.1, server: api.shop.loc, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.2-fpm.sock:", host: "api.shop.loc"
+2019/03/21 21:52:07 [error] 1870#1870: *10 FastCGI sent in stderr: "PHP message: PHP Warning:  require(/app/api/config/params-local.php): failed to open stream: No such file or directory in /app/api/config/main.php on line 6
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /app/api/web/index.php:0
+PHP message: PHP   2. require() /app/api/web/index.php:13
+PHP message: PHP Fatal error:  require(): Failed opening required '/app/api/config/params-local.php' (include_path='.:/usr/share/php') in /app/api/config/main.php on line 6
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /app/api/web/index.php:0
+PHP message: PHP   2. require() /app/api/web/index.php:13" while reading response header from upstream, client: 192.168.83.1, server: api.shop.loc, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.2-fpm.sock:", host: "api.shop.loc"
+2019/03/21 21:53:23 [error] 1870#1870: *10 FastCGI sent in stderr: "PHP message: PHP Warning:  require(/app/api/config/params-local.php): failed to open stream: No such file or directory in /app/api/config/main.php on line 6
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /app/api/web/index.php:0
+PHP message: PHP   2. require() /app/api/web/index.php:14
+PHP message: PHP Fatal error:  require(): Failed opening required '/app/api/config/params-local.php' (include_path='.:/usr/share/php') in /app/api/config/main.php on line 6
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /app/api/web/index.php:0
+PHP message: PHP   2. require() /app/api/web/index.php:14" while reading response header from upstream, client: 192.168.83.1, server: api.shop.loc, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.2-fpm.sock:", host: "api.shop.loc"
+2019/03/21 21:54:29 [error] 1870#1870: *10 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: staticPath in /app/api/config/main.php on line 12
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /app/api/web/index.php:0
+PHP message: PHP   2. require() /app/api/web/index.php:14
+PHP message: PHP Notice:  Undefined index: staticHostInfo in /app/api/config/main.php on line 13
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /app/api/web/index.php:0
+PHP message: PHP   2. require() /app/api/web/index.php:14" while reading response header from upstream, client: 192.168.83.1, server: api.shop.loc, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.2-fpm.sock:", host: "api.shop.loc"
+2019/03/21 21:55:38 [error] 1870#1870: *37 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: staticPath in /app/api/config/main.php on line 12
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /app/api/web/index.php:0
+PHP message: PHP   2. require() /app/api/web/index.php:14
+PHP message: PHP Notice:  Undefined index: staticHostInfo in /app/api/config/main.php on line 13
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /app/api/web/index.php:0
+PHP message: PHP   2. require() /app/api/web/index.php:14" while reading response header from upstream, client: 192.168.83.1, server: api.shop.loc, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.2-fpm.sock:", host: "api.shop.loc"
+2019/03/21 21:56:55 [error] 1870#1870: *40 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: staticPath in /app/api/config/main.php on line 12
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /app/api/web/index.php:0
+PHP message: PHP   2. require() /app/api/web/index.php:14
+PHP message: PHP Notice:  Undefined index: staticHostInfo in /app/api/config/main.php on line 13
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /app/api/web/index.php:0
+PHP message: PHP   2. require() /app/api/web/index.php:14" while reading response header from upstream, client: 192.168.83.1, server: api.shop.loc, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.2-fpm.sock:", host: "api.shop.loc"
+2019/03/21 21:57:47 [error] 1870#1870: *40 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: staticPath in /app/api/config/main.php on line 12
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /app/api/web/index.php:0
+PHP message: PHP   2. require() /app/api/web/index.php:14
+PHP message: PHP Notice:  Undefined index: staticHostInfo in /app/api/config/main.php on line 13
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /app/api/web/index.php:0
+PHP message: PHP   2. require() /app/api/web/index.php:14" while reading response header from upstream, client: 192.168.83.1, server: api.shop.loc, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.2-fpm.sock:", host: "api.shop.loc"
+2019/03/21 21:58:03 [error] 1870#1870: *40 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: staticPath in /app/api/config/main.php on line 12
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /app/api/web/index.php:0
+PHP message: PHP   2. require() /app/api/web/index.php:14
+PHP message: PHP Notice:  Undefined index: staticHostInfo in /app/api/config/main.php on line 13
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /app/api/web/index.php:0
+PHP message: PHP   2. require() /app/api/web/index.php:14" while reading response header from upstream, client: 192.168.83.1, server: api.shop.loc, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.2-fpm.sock:", host: "api.shop.loc"
+2019/03/21 21:58:14 [error] 1870#1870: *40 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: staticPath in /app/api/config/main.php on line 12
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /app/api/web/index.php:0
+PHP message: PHP   2. require() /app/api/web/index.php:14
+PHP message: PHP Notice:  Undefined index: staticHostInfo in /app/api/config/main.php on line 13
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /app/api/web/index.php:0
+PHP message: PHP   2. require() /app/api/web/index.php:14" while reading response header from upstream, client: 192.168.83.1, server: api.shop.loc, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.2-fpm.sock:", host: "api.shop.loc"
+2019/03/21 21:58:59 [error] 1870#1870: *40 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: staticPath in /app/api/config/main.php on line 12
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /app/api/web/index.php:0
+PHP message: PHP   2. require() /app/api/web/index.php:14
+PHP message: PHP Notice:  Undefined index: staticHostInfo in /app/api/config/main.php on line 13
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /app/api/web/index.php:0
+PHP message: PHP   2. require() /app/api/web/index.php:14" while reading response header from upstream, client: 192.168.83.1, server: api.shop.loc, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.2-fpm.sock:", host: "api.shop.loc"
+2019/03/21 21:59:33 [error] 1870#1870: *40 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: staticPath in /app/api/config/main.php on line 12
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /app/api/web/index.php:0
+PHP message: PHP   2. require() /app/api/web/index.php:14
+PHP message: PHP Notice:  Undefined index: staticHostInfo in /app/api/config/main.php on line 13
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /app/api/web/index.php:0
+PHP message: PHP   2. require() /app/api/web/index.php:14" while reading response header from upstream, client: 192.168.83.1, server: api.shop.loc, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.2-fpm.sock:", host: "api.shop.loc"
+2019/03/21 21:59:43 [error] 1870#1870: *40 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: staticPath in /app/api/config/main.php on line 12
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /app/api/web/index.php:0
+PHP message: PHP   2. require() /app/api/web/index.php:14
+PHP message: PHP Notice:  Undefined index: staticHostInfo in /app/api/config/main.php on line 13
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /app/api/web/index.php:0
+PHP message: PHP   2. require() /app/api/web/index.php:14" while reading response header from upstream, client: 192.168.83.1, server: api.shop.loc, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.2-fpm.sock:", host: "api.shop.loc"
+2019/03/21 22:00:45 [error] 1870#1870: *40 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: staticPath in /app/api/config/main.php on line 12
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /app/api/web/index.php:0
+PHP message: PHP   2. require() /app/api/web/index.php:14
+PHP message: PHP Notice:  Undefined index: staticHostInfo in /app/api/config/main.php on line 13
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /app/api/web/index.php:0
+PHP message: PHP   2. require() /app/api/web/index.php:14" while reading response header from upstream, client: 192.168.83.1, server: api.shop.loc, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.2-fpm.sock:", host: "api.shop.loc"
+2019/03/21 22:01:00 [error] 1870#1870: *40 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: staticPath in /app/api/config/main.php on line 12
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /app/api/web/index.php:0
+PHP message: PHP   2. require() /app/api/web/index.php:14
+PHP message: PHP Notice:  Undefined index: staticHostInfo in /app/api/config/main.php on line 13
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /app/api/web/index.php:0
+PHP message: PHP   2. require() /app/api/web/index.php:14" while reading response header from upstream, client: 192.168.83.1, server: api.shop.loc, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.2-fpm.sock:", host: "api.shop.loc"
+2019/03/21 22:01:16 [error] 1870#1870: *40 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: staticPath in /app/api/config/main.php on line 12
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /app/api/web/index.php:0
+PHP message: PHP   2. require() /app/api/web/index.php:14
+PHP message: PHP Notice:  Undefined index: staticHostInfo in /app/api/config/main.php on line 13
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /app/api/web/index.php:0
+PHP message: PHP   2. require() /app/api/web/index.php:14" while reading response header from upstream, client: 192.168.83.1, server: api.shop.loc, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.2-fpm.sock:", host: "api.shop.loc"
+2019/03/21 22:01:27 [error] 1870#1870: *40 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: staticPath in /app/api/config/main.php on line 12
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /app/api/web/index.php:0
+PHP message: PHP   2. require() /app/api/web/index.php:14
+PHP message: PHP Notice:  Undefined index: staticHostInfo in /app/api/config/main.php on line 13
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /app/api/web/index.php:0
+PHP message: PHP   2. require() /app/api/web/index.php:14" while reading response header from upstream, client: 192.168.83.1, server: api.shop.loc, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.2-fpm.sock:", host: "api.shop.loc"
+2019/03/21 22:02:03 [error] 1870#1870: *40 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: staticPath in /app/api/config/main.php on line 12
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /app/api/web/index.php:0
+PHP message: PHP   2. require() /app/api/web/index.php:14
+PHP message: PHP Notice:  Undefined index: staticHostInfo in /app/api/config/main.php on line 13
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /app/api/web/index.php:0
+PHP message: PHP   2. require() /app/api/web/index.php:14" while reading response header from upstream, client: 192.168.83.1, server: api.shop.loc, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.2-fpm.sock:", host: "api.shop.loc"
+2019/03/21 22:02:21 [error] 1870#1870: *40 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: staticPath in /app/api/config/main.php on line 12
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /app/api/web/index.php:0
+PHP message: PHP   2. require() /app/api/web/index.php:14
+PHP message: PHP Notice:  Undefined index: staticHostInfo in /app/api/config/main.php on line 13
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /app/api/web/index.php:0
+PHP message: PHP   2. require() /app/api/web/index.php:14" while reading response header from upstream, client: 192.168.83.1, server: api.shop.loc, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.2-fpm.sock:", host: "api.shop.loc"
+2019/03/21 22:02:44 [error] 1870#1870: *40 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: staticPath in /app/api/config/main.php on line 12
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /app/api/web/index.php:0
+PHP message: PHP   2. require() /app/api/web/index.php:14
+PHP message: PHP Notice:  Undefined index: staticHostInfo in /app/api/config/main.php on line 13
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /app/api/web/index.php:0
+PHP message: PHP   2. require() /app/api/web/index.php:14" while reading response header from upstream, client: 192.168.83.1, server: api.shop.loc, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.2-fpm.sock:", host: "api.shop.loc"
+2019/03/21 22:03:06 [error] 1870#1870: *40 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: staticPath in /app/api/config/main.php on line 12
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /app/api/web/index.php:0
+PHP message: PHP   2. require() /app/api/web/index.php:14
+PHP message: PHP Notice:  Undefined index: staticHostInfo in /app/api/config/main.php on line 13
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /app/api/web/index.php:0
+PHP message: PHP   2. require() /app/api/web/index.php:14" while reading response header from upstream, client: 192.168.83.1, server: api.shop.loc, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.2-fpm.sock:", host: "api.shop.loc"
+2019/03/21 22:03:19 [error] 1870#1870: *40 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: staticPath in /app/api/config/main.php on line 12
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /app/api/web/index.php:0
+PHP message: PHP   2. require() /app/api/web/index.php:14
+PHP message: PHP Notice:  Undefined index: staticHostInfo in /app/api/config/main.php on line 13
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /app/api/web/index.php:0
+PHP message: PHP   2. require() /app/api/web/index.php:14" while reading response header from upstream, client: 192.168.83.1, server: api.shop.loc, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.2-fpm.sock:", host: "api.shop.loc"
+2019/03/21 22:03:40 [error] 1870#1870: *40 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: staticPath in /app/api/config/main.php on line 12
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /app/api/web/index.php:0
+PHP message: PHP   2. require() /app/api/web/index.php:14
+PHP message: PHP Notice:  Undefined index: staticHostInfo in /app/api/config/main.php on line 13
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /app/api/web/index.php:0
+PHP message: PHP   2. require() /app/api/web/index.php:14" while reading response header from upstream, client: 192.168.83.1, server: api.shop.loc, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.2-fpm.sock:", host: "api.shop.loc"
+2019/03/21 22:03:43 [error] 1870#1870: *40 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: staticPath in /app/api/config/main.php on line 12
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /app/api/web/index.php:0
+PHP message: PHP   2. require() /app/api/web/index.php:14
+PHP message: PHP Notice:  Undefined index: staticHostInfo in /app/api/config/main.php on line 13
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /app/api/web/index.php:0
+PHP message: PHP   2. require() /app/api/web/index.php:14" while reading response header from upstream, client: 192.168.83.1, server: api.shop.loc, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.2-fpm.sock:", host: "api.shop.loc"
+2019/03/21 22:04:03 [error] 1870#1870: *40 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: staticPath in /app/api/config/main.php on line 12
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /app/api/web/index.php:0
+PHP message: PHP   2. require() /app/api/web/index.php:14
+PHP message: PHP Notice:  Undefined index: staticHostInfo in /app/api/config/main.php on line 13
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /app/api/web/index.php:0
+PHP message: PHP   2. require() /app/api/web/index.php:14" while reading response header from upstream, client: 192.168.83.1, server: api.shop.loc, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.2-fpm.sock:", host: "api.shop.loc"
+2019/03/21 22:04:19 [error] 1870#1870: *40 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: staticPath in /app/api/config/main.php on line 12
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /app/api/web/index.php:0
+PHP message: PHP   2. require() /app/api/web/index.php:14
+PHP message: PHP Notice:  Undefined index: staticHostInfo in /app/api/config/main.php on line 13
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /app/api/web/index.php:0
+PHP message: PHP   2. require() /app/api/web/index.php:14" while reading response header from upstream, client: 192.168.83.1, server: api.shop.loc, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.2-fpm.sock:", host: "api.shop.loc"
+2019/03/21 22:04:21 [error] 1870#1870: *40 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: staticPath in /app/api/config/main.php on line 12
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /app/api/web/index.php:0
+PHP message: PHP   2. require() /app/api/web/index.php:14
+PHP message: PHP Notice:  Undefined index: staticHostInfo in /app/api/config/main.php on line 13
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /app/api/web/index.php:0
+PHP message: PHP   2. require() /app/api/web/index.php:14" while reading response header from upstream, client: 192.168.83.1, server: api.shop.loc, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.2-fpm.sock:", host: "api.shop.loc"
+2019/03/21 22:04:39 [error] 1870#1870: *40 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: staticPath in /app/api/config/main.php on line 12
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /app/api/web/index.php:0
+PHP message: PHP   2. require() /app/api/web/index.php:14
+PHP message: PHP Notice:  Undefined index: staticHostInfo in /app/api/config/main.php on line 13
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /app/api/web/index.php:0
+PHP message: PHP   2. require() /app/api/web/index.php:14" while reading response header from upstream, client: 192.168.83.1, server: api.shop.loc, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.2-fpm.sock:", host: "api.shop.loc"
+2019/03/21 22:04:51 [error] 1870#1870: *40 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: staticPath in /app/api/config/main.php on line 12
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /app/api/web/index.php:0
+PHP message: PHP   2. require() /app/api/web/index.php:14
+PHP message: PHP Notice:  Undefined index: staticHostInfo in /app/api/config/main.php on line 13
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /app/api/web/index.php:0
+PHP message: PHP   2. require() /app/api/web/index.php:14" while reading response header from upstream, client: 192.168.83.1, server: api.shop.loc, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.2-fpm.sock:", host: "api.shop.loc"
+2019/03/21 22:04:59 [error] 1870#1870: *40 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: staticPath in /app/api/config/main.php on line 12
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /app/api/web/index.php:0
+PHP message: PHP   2. require() /app/api/web/index.php:14
+PHP message: PHP Notice:  Undefined index: staticHostInfo in /app/api/config/main.php on line 13
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /app/api/web/index.php:0
+PHP message: PHP   2. require() /app/api/web/index.php:14" while reading response header from upstream, client: 192.168.83.1, server: api.shop.loc, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.2-fpm.sock:", host: "api.shop.loc"
+2019/03/21 22:07:22 [error] 1870#1870: *85 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: staticPath in /app/api/config/main.php on line 12
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /app/api/web/index.php:0
+PHP message: PHP   2. require() /app/api/web/index.php:14
+PHP message: PHP Notice:  Undefined index: staticHostInfo in /app/api/config/main.php on line 13
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /app/api/web/index.php:0
+PHP message: PHP   2. require() /app/api/web/index.php:14" while reading response header from upstream, client: 192.168.83.1, server: api.shop.loc, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.2-fpm.sock:", host: "api.shop.loc"
+2019/03/21 22:07:34 [error] 1870#1870: *85 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: staticPath in /app/api/config/main.php on line 12
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /app/api/web/index.php:0
+PHP message: PHP   2. require() /app/api/web/index.php:14
+PHP message: PHP Notice:  Undefined index: staticHostInfo in /app/api/config/main.php on line 13
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /app/api/web/index.php:0
+PHP message: PHP   2. require() /app/api/web/index.php:14" while reading response header from upstream, client: 192.168.83.1, server: api.shop.loc, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.2-fpm.sock:", host: "api.shop.loc"
+2019/03/21 22:07:47 [error] 1870#1870: *85 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: staticPath in /app/api/config/main.php on line 12
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /app/api/web/index.php:0
+PHP message: PHP   2. require() /app/api/web/index.php:14
+PHP message: PHP Notice:  Undefined index: staticHostInfo in /app/api/config/main.php on line 13
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /app/api/web/index.php:0
+PHP message: PHP   2. require() /app/api/web/index.php:14" while reading response header from upstream, client: 192.168.83.1, server: api.shop.loc, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.2-fpm.sock:", host: "api.shop.loc"
+2019/03/21 22:08:14 [error] 1870#1870: *85 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: staticPath in /app/api/config/main.php on line 12
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /app/api/web/index.php:0
+PHP message: PHP   2. require() /app/api/web/index.php:14
+PHP message: PHP Notice:  Undefined index: staticHostInfo in /app/api/config/main.php on line 13
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /app/api/web/index.php:0
+PHP message: PHP   2. require() /app/api/web/index.php:14" while reading response header from upstream, client: 192.168.83.1, server: api.shop.loc, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.2-fpm.sock:", host: "api.shop.loc"
+2019/03/21 22:08:25 [error] 1870#1870: *85 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: staticPath in /app/api/config/main.php on line 12
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /app/api/web/index.php:0
+PHP message: PHP   2. require() /app/api/web/index.php:14
+PHP message: PHP Notice:  Undefined index: staticHostInfo in /app/api/config/main.php on line 13
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /app/api/web/index.php:0
+PHP message: PHP   2. require() /app/api/web/index.php:14" while reading response header from upstream, client: 192.168.83.1, server: api.shop.loc, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.2-fpm.sock:", host: "api.shop.loc"
+2019/03/21 22:08:32 [error] 1870#1870: *85 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: staticPath in /app/api/config/main.php on line 12
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /app/api/web/index.php:0
+PHP message: PHP   2. require() /app/api/web/index.php:14
+PHP message: PHP Notice:  Undefined index: staticHostInfo in /app/api/config/main.php on line 13
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /app/api/web/index.php:0
+PHP message: PHP   2. require() /app/api/web/index.php:14" while reading response header from upstream, client: 192.168.83.1, server: api.shop.loc, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.2-fpm.sock:", host: "api.shop.loc"
+2019/03/21 22:08:48 [error] 1870#1870: *85 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: staticPath in /app/api/config/main.php on line 12
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /app/api/web/index.php:0
+PHP message: PHP   2. require() /app/api/web/index.php:14
+PHP message: PHP Notice:  Undefined index: staticHostInfo in /app/api/config/main.php on line 13
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /app/api/web/index.php:0
+PHP message: PHP   2. require() /app/api/web/index.php:14" while reading response header from upstream, client: 192.168.83.1, server: api.shop.loc, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.2-fpm.sock:", host: "api.shop.loc"
+2019/03/21 22:11:54 [error] 1870#1870: *99 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: staticPath in /app/api/config/main.php on line 12
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /app/api/web/index.php:0
+PHP message: PHP   2. require() /app/api/web/index.php:14
+PHP message: PHP Notice:  Undefined index: staticHostInfo in /app/api/config/main.php on line 13
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /app/api/web/index.php:0
+PHP message: PHP   2. require() /app/api/web/index.php:14" while reading response header from upstream, client: 192.168.83.1, server: api.shop.loc, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.2-fpm.sock:", host: "api.shop.loc"
+2019/03/21 22:12:23 [error] 1870#1870: *99 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: staticPath in /app/api/config/main.php on line 12
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /app/api/web/index.php:0
+PHP message: PHP   2. require() /app/api/web/index.php:14
+PHP message: PHP Notice:  Undefined index: staticHostInfo in /app/api/config/main.php on line 13
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /app/api/web/index.php:0
+PHP message: PHP   2. require() /app/api/web/index.php:14" while reading response header from upstream, client: 192.168.83.1, server: api.shop.loc, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.2-fpm.sock:", host: "api.shop.loc"
+2019/03/21 22:12:29 [error] 1870#1870: *99 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: staticPath in /app/api/config/main.php on line 12
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /app/api/web/index.php:0
+PHP message: PHP   2. require() /app/api/web/index.php:14
+PHP message: PHP Notice:  Undefined index: staticHostInfo in /app/api/config/main.php on line 13
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /app/api/web/index.php:0
+PHP message: PHP   2. require() /app/api/web/index.php:14" while reading response header from upstream, client: 192.168.83.1, server: api.shop.loc, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.2-fpm.sock:", host: "api.shop.loc"
+2019/03/21 22:13:14 [error] 1870#1870: *99 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: staticPath in /app/api/config/main.php on line 12
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /app/api/web/index.php:0
+PHP message: PHP   2. require() /app/api/web/index.php:14
+PHP message: PHP Notice:  Undefined index: staticHostInfo in /app/api/config/main.php on line 13
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /app/api/web/index.php:0
+PHP message: PHP   2. require() /app/api/web/index.php:14" while reading response header from upstream, client: 192.168.83.1, server: api.shop.loc, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.2-fpm.sock:", host: "api.shop.loc"
+2019/03/21 22:13:30 [error] 1870#1870: *99 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: staticPath in /app/api/config/main.php on line 12
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /app/api/web/index.php:0
+PHP message: PHP   2. require() /app/api/web/index.php:14
+PHP message: PHP Notice:  Undefined index: staticHostInfo in /app/api/config/main.php on line 13
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /app/api/web/index.php:0
+PHP message: PHP   2. require() /app/api/web/index.php:14" while reading response header from upstream, client: 192.168.83.1, server: api.shop.loc, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.2-fpm.sock:", host: "api.shop.loc"
+2019/03/21 22:14:00 [error] 1870#1870: *99 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: staticPath in /app/api/config/main.php on line 12
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /app/api/web/index.php:0
+PHP message: PHP   2. require() /app/api/web/index.php:14
+PHP message: PHP Notice:  Undefined index: staticHostInfo in /app/api/config/main.php on line 13
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /app/api/web/index.php:0
+PHP message: PHP   2. require() /app/api/web/index.php:14" while reading response header from upstream, client: 192.168.83.1, server: api.shop.loc, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.2-fpm.sock:", host: "api.shop.loc"
+2019/03/21 22:14:01 [error] 1870#1870: *99 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: staticPath in /app/api/config/main.php on line 12
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /app/api/web/index.php:0
+PHP message: PHP   2. require() /app/api/web/index.php:14
+PHP message: PHP Notice:  Undefined index: staticHostInfo in /app/api/config/main.php on line 13
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /app/api/web/index.php:0
+PHP message: PHP   2. require() /app/api/web/index.php:14" while reading response header from upstream, client: 192.168.83.1, server: api.shop.loc, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.2-fpm.sock:", host: "api.shop.loc"
+2019/03/21 22:14:12 [error] 1870#1870: *99 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: staticPath in /app/api/config/main.php on line 12
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /app/api/web/index.php:0
+PHP message: PHP   2. require() /app/api/web/index.php:14
+PHP message: PHP Notice:  Undefined index: staticHostInfo in /app/api/config/main.php on line 13
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /app/api/web/index.php:0
+PHP message: PHP   2. require() /app/api/web/index.php:14" while reading response header from upstream, client: 192.168.83.1, server: api.shop.loc, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.2-fpm.sock:", host: "api.shop.loc"
+2019/03/21 22:14:32 [error] 1870#1870: *99 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: staticPath in /app/api/config/main.php on line 12
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /app/api/web/index.php:0
+PHP message: PHP   2. require() /app/api/web/index.php:14
+PHP message: PHP Notice:  Undefined index: staticHostInfo in /app/api/config/main.php on line 13
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /app/api/web/index.php:0
+PHP message: PHP   2. require() /app/api/web/index.php:14" while reading response header from upstream, client: 192.168.83.1, server: api.shop.loc, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.2-fpm.sock:", host: "api.shop.loc"
+2019/03/21 22:14:56 [error] 1870#1870: *99 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: staticPath in /app/api/config/main.php on line 12
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /app/api/web/index.php:0
+PHP message: PHP   2. require() /app/api/web/index.php:14
+PHP message: PHP Notice:  Undefined index: staticHostInfo in /app/api/config/main.php on line 13
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /app/api/web/index.php:0
+PHP message: PHP   2. require() /app/api/web/index.php:14" while reading response header from upstream, client: 192.168.83.1, server: api.shop.loc, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.2-fpm.sock:", host: "api.shop.loc"
+2019/03/21 22:15:19 [error] 1870#1870: *99 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: staticPath in /app/api/config/main.php on line 12
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /app/api/web/index.php:0
+PHP message: PHP   2. require() /app/api/web/index.php:14
+PHP message: PHP Notice:  Undefined index: staticHostInfo in /app/api/config/main.php on line 13
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /app/api/web/index.php:0
+PHP message: PHP   2. require() /app/api/web/index.php:14" while reading response header from upstream, client: 192.168.83.1, server: api.shop.loc, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.2-fpm.sock:", host: "api.shop.loc"
+2019/03/21 22:15:21 [error] 1870#1870: *99 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: staticPath in /app/api/config/main.php on line 12
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /app/api/web/index.php:0
+PHP message: PHP   2. require() /app/api/web/index.php:14
+PHP message: PHP Notice:  Undefined index: staticHostInfo in /app/api/config/main.php on line 13
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /app/api/web/index.php:0
+PHP message: PHP   2. require() /app/api/web/index.php:14" while reading response header from upstream, client: 192.168.83.1, server: api.shop.loc, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.2-fpm.sock:", host: "api.shop.loc"
+2019/03/21 22:15:36 [error] 1870#1870: *99 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: staticPath in /app/api/config/main.php on line 12
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /app/api/web/index.php:0
+PHP message: PHP   2. require() /app/api/web/index.php:14
+PHP message: PHP Notice:  Undefined index: staticHostInfo in /app/api/config/main.php on line 13
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /app/api/web/index.php:0
+PHP message: PHP   2. require() /app/api/web/index.php:14" while reading response header from upstream, client: 192.168.83.1, server: api.shop.loc, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.2-fpm.sock:", host: "api.shop.loc"
+2019/03/21 22:15:41 [error] 1870#1870: *99 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: staticPath in /app/api/config/main.php on line 12
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /app/api/web/index.php:0
+PHP message: PHP   2. require() /app/api/web/index.php:14
+PHP message: PHP Notice:  Undefined index: staticHostInfo in /app/api/config/main.php on line 13
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /app/api/web/index.php:0
+PHP message: PHP   2. require() /app/api/web/index.php:14" while reading response header from upstream, client: 192.168.83.1, server: api.shop.loc, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.2-fpm.sock:", host: "api.shop.loc"
+2019/03/21 22:15:54 [error] 1870#1870: *99 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: staticPath in /app/api/config/main.php on line 12
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /app/api/web/index.php:0
+PHP message: PHP   2. require() /app/api/web/index.php:14
+PHP message: PHP Notice:  Undefined index: staticHostInfo in /app/api/config/main.php on line 13
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /app/api/web/index.php:0
+PHP message: PHP   2. require() /app/api/web/index.php:14" while reading response header from upstream, client: 192.168.83.1, server: api.shop.loc, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.2-fpm.sock:", host: "api.shop.loc"
+2019/03/21 22:18:19 [error] 1870#1870: *126 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: staticPath in /app/api/config/main.php on line 12
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /app/api/web/index.php:0
+PHP message: PHP   2. require() /app/api/web/index.php:14
+PHP message: PHP Notice:  Undefined index: staticHostInfo in /app/api/config/main.php on line 13
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /app/api/web/index.php:0
+PHP message: PHP   2. require() /app/api/web/index.php:14" while reading response header from upstream, client: 192.168.83.1, server: api.shop.loc, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.2-fpm.sock:", host: "api.shop.loc"
+2019/03/21 22:18:41 [error] 1870#1870: *126 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: staticPath in /app/api/config/main.php on line 12
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /app/api/web/index.php:0
+PHP message: PHP   2. require() /app/api/web/index.php:14
+PHP message: PHP Notice:  Undefined index: staticHostInfo in /app/api/config/main.php on line 13
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /app/api/web/index.php:0
+PHP message: PHP   2. require() /app/api/web/index.php:14" while reading response header from upstream, client: 192.168.83.1, server: api.shop.loc, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.2-fpm.sock:", host: "api.shop.loc"
+2019/03/21 22:18:54 [error] 1870#1870: *126 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: staticPath in /app/api/config/main.php on line 12
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /app/api/web/index.php:0
+PHP message: PHP   2. require() /app/api/web/index.php:14
+PHP message: PHP Notice:  Undefined index: staticHostInfo in /app/api/config/main.php on line 13
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /app/api/web/index.php:0
+PHP message: PHP   2. require() /app/api/web/index.php:14" while reading response header from upstream, client: 192.168.83.1, server: api.shop.loc, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.2-fpm.sock:", host: "api.shop.loc"
+2019/03/21 22:20:06 [error] 1870#1870: *133 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: staticPath in /app/api/config/main.php on line 12
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /app/api/web/index.php:0
+PHP message: PHP   2. require() /app/api/web/index.php:14
+PHP message: PHP Notice:  Undefined index: staticHostInfo in /app/api/config/main.php on line 13
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /app/api/web/index.php:0
+PHP message: PHP   2. require() /app/api/web/index.php:14" while reading response header from upstream, client: 192.168.83.1, server: api.shop.loc, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.2-fpm.sock:", host: "api.shop.loc"
+2019/03/21 22:22:30 [error] 1870#1870: *136 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: staticPath in /app/api/config/main.php on line 12
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /app/api/web/index.php:0
+PHP message: PHP   2. require() /app/api/web/index.php:14
+PHP message: PHP Notice:  Undefined index: staticHostInfo in /app/api/config/main.php on line 13
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /app/api/web/index.php:0
+PHP message: PHP   2. require() /app/api/web/index.php:14" while reading response header from upstream, client: 192.168.83.1, server: api.shop.loc, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.2-fpm.sock:", host: "api.shop.loc"
+2019/03/21 22:23:12 [error] 1870#1870: *136 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: staticPath in /app/api/config/main.php on line 12
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /app/api/web/index.php:0
+PHP message: PHP   2. require() /app/api/web/index.php:14
+PHP message: PHP Notice:  Undefined index: staticHostInfo in /app/api/config/main.php on line 13
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /app/api/web/index.php:0
+PHP message: PHP   2. require() /app/api/web/index.php:14" while reading response header from upstream, client: 192.168.83.1, server: api.shop.loc, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.2-fpm.sock:", host: "api.shop.loc"

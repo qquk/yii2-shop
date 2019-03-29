@@ -165,15 +165,6 @@ return array (
       '@kartik/spinner' => $vendorDir . '/kartik-v/yii2-widget-spinner/src',
     ),
   ),
-  'kartik-v/yii2-widget-select2' => 
-  array (
-    'name' => 'kartik-v/yii2-widget-select2',
-    'version' => '2.1.3.0',
-    'alias' => 
-    array (
-      '@kartik/select2' => $vendorDir . '/kartik-v/yii2-widget-select2/src',
-    ),
-  ),
   'kartik-v/yii2-widget-rating' => 
   array (
     'name' => 'kartik-v/yii2-widget-rating',
@@ -190,15 +181,6 @@ return array (
     'alias' => 
     array (
       '@kartik/range' => $vendorDir . '/kartik-v/yii2-widget-rangeinput/src',
-    ),
-  ),
-  'kartik-v/yii2-widget-fileinput' => 
-  array (
-    'name' => 'kartik-v/yii2-widget-fileinput',
-    'version' => '1.0.8.0',
-    'alias' => 
-    array (
-      '@kartik/file' => $vendorDir . '/kartik-v/yii2-widget-fileinput/src',
     ),
   ),
   'kartik-v/yii2-widget-depdrop' => 
@@ -327,5 +309,32 @@ return array (
       '@filsh/yii2/oauth2server' => $vendorDir . '/filsh/yii2-oauth2-server',
     ),
     'bootstrap' => 'filsh\\yii2\\oauth2server\\Bootstrap',
+  ),
+  'kartik-v/yii2-widget-select2' => 
+  array (
+    'name' => 'kartik-v/yii2-widget-select2',
+    'version' => '9999999-dev',
+    'alias' => 
+    array (
+      '@kartik/select2' => $vendorDir . '/kartik-v/yii2-widget-select2/src',
+    ),
+  ),
+  'kartik-v/yii2-widget-fileinput' => 
+  array (
+    'name' => 'kartik-v/yii2-widget-fileinput',
+    'version' => '9999999-dev',
+    'alias' => 
+    array (
+      '@kartik/file' => $vendorDir . '/kartik-v/yii2-widget-fileinput/src',
+    ),
+  ),
+  'mihaildev/yii2-ckeditor' => 
+  array (
+    'name' => 'mihaildev/yii2-ckeditor',
+    'version' => '1.0.1.0',
+    'alias' => 
+    array (
+      '@mihaildev/ckeditor' => $vendorDir . '/mihaildev/yii2-ckeditor',
+    ),
   ),
 );

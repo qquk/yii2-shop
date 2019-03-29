@@ -406,17 +406,17 @@
     },
     {
         "name": "codeception/base",
-        "version": "2.5.4",
-        "version_normalized": "2.5.4.0",
+        "version": "2.5.5",
+        "version_normalized": "2.5.5.0",
         "source": {
             "type": "git",
             "url": "https://github.com/Codeception/base.git",
-            "reference": "41f2257227130faa1a43c476c72f8031f9504d7b"
+            "reference": "17c3e2fc627b18dceec393b4b42e47c45be31ac2"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/Codeception/base/zipball/41f2257227130faa1a43c476c72f8031f9504d7b",
-            "reference": "41f2257227130faa1a43c476c72f8031f9504d7b",
+            "url": "https://api.github.com/repos/Codeception/base/zipball/17c3e2fc627b18dceec393b4b42e47c45be31ac2",
+            "reference": "17c3e2fc627b18dceec393b4b42e47c45be31ac2",
             "shasum": ""
         },
         "require": {
@@ -460,7 +460,7 @@
             "stecman/symfony-console-completion": "For BASH autocompletion",
             "symfony/phpunit-bridge": "For phpunit-bridge support"
         },
-        "time": "2019-02-20T21:29:36+00:00",
+        "time": "2019-03-23T18:30:45+00:00",
         "bin": [
             "codecept"
         ],
@@ -675,30 +675,32 @@
     },
     {
         "name": "doctrine/instantiator",
-        "version": "1.1.0",
-        "version_normalized": "1.1.0.0",
+        "version": "1.2.0",
+        "version_normalized": "1.2.0.0",
         "source": {
             "type": "git",
             "url": "https://github.com/doctrine/instantiator.git",
-            "reference": "185b8868aa9bf7159f5f953ed5afb2d7fcdc3bda"
+            "reference": "a2c590166b2133a4633738648b6b064edae0814a"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/doctrine/instantiator/zipball/185b8868aa9bf7159f5f953ed5afb2d7fcdc3bda",
-            "reference": "185b8868aa9bf7159f5f953ed5afb2d7fcdc3bda",
+            "url": "https://api.github.com/repos/doctrine/instantiator/zipball/a2c590166b2133a4633738648b6b064edae0814a",
+            "reference": "a2c590166b2133a4633738648b6b064edae0814a",
             "shasum": ""
         },
         "require": {
             "php": "^7.1"
         },
         "require-dev": {
-            "athletic/athletic": "~0.1.8",
+            "doctrine/coding-standard": "^6.0",
             "ext-pdo": "*",
             "ext-phar": "*",
-            "phpunit/phpunit": "^6.2.3",
-            "squizlabs/php_codesniffer": "^3.0.2"
+            "phpbench/phpbench": "^0.13",
+            "phpstan/phpstan-phpunit": "^0.11",
+            "phpstan/phpstan-shim": "^0.11",
+            "phpunit/phpunit": "^7.0"
         },
-        "time": "2017-07-22T11:58:36+00:00",
+        "time": "2019-03-17T17:37:11+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -723,7 +725,7 @@
             }
         ],
         "description": "A small, lightweight utility to instantiate objects in PHP without invoking their constructors",
-        "homepage": "https://github.com/doctrine/instantiator",
+        "homepage": "https://www.doctrine-project.org/projects/instantiator.html",
         "keywords": [
             "constructor",
             "instantiate"
@@ -1864,31 +1866,31 @@
     },
     {
         "name": "kartik-v/yii2-widget-fileinput",
-        "version": "v1.0.8",
-        "version_normalized": "1.0.8.0",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
         "source": {
             "type": "git",
             "url": "https://github.com/kartik-v/yii2-widget-fileinput.git",
-            "reference": "7f76d784cc48733746ff90b53b8474dcf48ea6c4"
+            "reference": "41820a1f2c50e1f9349a8a9a90c36027f57dfaf8"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/kartik-v/yii2-widget-fileinput/zipball/7f76d784cc48733746ff90b53b8474dcf48ea6c4",
-            "reference": "7f76d784cc48733746ff90b53b8474dcf48ea6c4",
+            "url": "https://api.github.com/repos/kartik-v/yii2-widget-fileinput/zipball/41820a1f2c50e1f9349a8a9a90c36027f57dfaf8",
+            "reference": "41820a1f2c50e1f9349a8a9a90c36027f57dfaf8",
             "shasum": ""
         },
         "require": {
             "kartik-v/bootstrap-fileinput": "~4.4",
             "kartik-v/yii2-krajee-base": ">=1.9"
         },
-        "time": "2018-09-19T13:09:42+00:00",
+        "time": "2018-11-05T12:33:27+00:00",
         "type": "yii2-extension",
         "extra": {
             "branch-alias": {
                 "dev-master": "1.0.x-dev"
             }
         },
-        "installation-source": "dist",
+        "installation-source": "source",
         "autoload": {
             "psr-4": {
                 "kartik\\file\\": "src"
@@ -2086,30 +2088,30 @@
     },
     {
         "name": "kartik-v/yii2-widget-select2",
-        "version": "v2.1.3",
-        "version_normalized": "2.1.3.0",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
         "source": {
             "type": "git",
             "url": "https://github.com/kartik-v/yii2-widget-select2.git",
-            "reference": "f1ae98b7ec3e46ba0193471647ce15d07aa67f58"
+            "reference": "dd09e46e618cf1c67a39fac9f38d97a95184fe8a"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/kartik-v/yii2-widget-select2/zipball/f1ae98b7ec3e46ba0193471647ce15d07aa67f58",
-            "reference": "f1ae98b7ec3e46ba0193471647ce15d07aa67f58",
+            "url": "https://api.github.com/repos/kartik-v/yii2-widget-select2/zipball/dd09e46e618cf1c67a39fac9f38d97a95184fe8a",
+            "reference": "dd09e46e618cf1c67a39fac9f38d97a95184fe8a",
             "shasum": ""
         },
         "require": {
             "kartik-v/yii2-krajee-base": ">=1.9"
         },
-        "time": "2018-09-07T08:11:16+00:00",
+        "time": "2018-12-11T10:34:32+00:00",
         "type": "yii2-extension",
         "extra": {
             "branch-alias": {
                 "dev-master": "2.1.x-dev"
             }
         },
-        "installation-source": "dist",
+        "installation-source": "source",
         "autoload": {
             "psr-4": {
                 "kartik\\select2\\": "src"
@@ -2584,6 +2586,59 @@
             "has-one",
             "relations",
             "yii2"
+        ]
+    },
+    {
+        "name": "mihaildev/yii2-ckeditor",
+        "version": "1.0.1",
+        "version_normalized": "1.0.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/MihailDev/yii2-ckeditor.git",
+            "reference": "d20aa7f6bcf610fee226d6eb15212a279875bf87"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/MihailDev/yii2-ckeditor/zipball/d20aa7f6bcf610fee226d6eb15212a279875bf87",
+            "reference": "d20aa7f6bcf610fee226d6eb15212a279875bf87",
+            "shasum": ""
+        },
+        "require": {
+            "yiisoft/yii2": "*"
+        },
+        "time": "2014-11-19T22:04:08+00:00",
+        "type": "yii2-extension",
+        "extra": {
+            "asset-installer-paths": {
+                "npm-asset-library": "vendor/npm",
+                "bower-asset-library": "vendor/bower"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "mihaildev\\ckeditor\\": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "authors": [
+            {
+                "name": "Mihail",
+                "email": "mihail.kucher@gmail.com",
+                "homepage": "https://github.com/MihailDev",
+                "role": "Developer"
+            }
+        ],
+        "description": "Yii2 CKEditor",
+        "homepage": "https://github.com/MihailDev/yii2-ckeditor",
+        "keywords": [
+            "CKEditor",
+            "editor",
+            "wysiwyg",
+            "yii"
         ]
     },
     {
@@ -4640,17 +4695,17 @@
     },
     {
         "name": "symfony/polyfill-ctype",
-        "version": "v1.10.0",
-        "version_normalized": "1.10.0.0",
+        "version": "v1.11.0",
+        "version_normalized": "1.11.0.0",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/polyfill-ctype.git",
-            "reference": "e3d826245268269cd66f8326bd8bc066687b4a19"
+            "reference": "82ebae02209c21113908c229e9883c419720738a"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/symfony/polyfill-ctype/zipball/e3d826245268269cd66f8326bd8bc066687b4a19",
-            "reference": "e3d826245268269cd66f8326bd8bc066687b4a19",
+            "url": "https://api.github.com/repos/symfony/polyfill-ctype/zipball/82ebae02209c21113908c229e9883c419720738a",
+            "reference": "82ebae02209c21113908c229e9883c419720738a",
             "shasum": ""
         },
         "require": {
@@ -4659,11 +4714,11 @@
         "suggest": {
             "ext-ctype": "For best performance"
         },
-        "time": "2018-08-06T14:22:27+00:00",
+        "time": "2019-02-06T07:57:58+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
-                "dev-master": "1.9-dev"
+                "dev-master": "1.11-dev"
             }
         },
         "installation-source": "dist",
@@ -4700,17 +4755,17 @@
     },
     {
         "name": "symfony/polyfill-iconv",
-        "version": "v1.10.0",
-        "version_normalized": "1.10.0.0",
+        "version": "v1.11.0",
+        "version_normalized": "1.11.0.0",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/polyfill-iconv.git",
-            "reference": "97001cfc283484c9691769f51cdf25259037eba2"
+            "reference": "f037ea22acfaee983e271dd9c3b8bb4150bd8ad7"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/symfony/polyfill-iconv/zipball/97001cfc283484c9691769f51cdf25259037eba2",
-            "reference": "97001cfc283484c9691769f51cdf25259037eba2",
+            "url": "https://api.github.com/repos/symfony/polyfill-iconv/zipball/f037ea22acfaee983e271dd9c3b8bb4150bd8ad7",
+            "reference": "f037ea22acfaee983e271dd9c3b8bb4150bd8ad7",
             "shasum": ""
         },
         "require": {
@@ -4719,11 +4774,11 @@
         "suggest": {
             "ext-iconv": "For best performance"
         },
-        "time": "2018-09-21T06:26:08+00:00",
+        "time": "2019-02-06T07:57:58+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
-                "dev-master": "1.9-dev"
+                "dev-master": "1.11-dev"
             }
         },
         "installation-source": "dist",
@@ -4761,17 +4816,17 @@
     },
     {
         "name": "symfony/polyfill-intl-idn",
-        "version": "v1.10.0",
-        "version_normalized": "1.10.0.0",
+        "version": "v1.11.0",
+        "version_normalized": "1.11.0.0",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/polyfill-intl-idn.git",
-            "reference": "89de1d44f2c059b266f22c9cc9124ddc4cd0987a"
+            "reference": "c766e95bec706cdd89903b1eda8afab7d7a6b7af"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/symfony/polyfill-intl-idn/zipball/89de1d44f2c059b266f22c9cc9124ddc4cd0987a",
-            "reference": "89de1d44f2c059b266f22c9cc9124ddc4cd0987a",
+            "url": "https://api.github.com/repos/symfony/polyfill-intl-idn/zipball/c766e95bec706cdd89903b1eda8afab7d7a6b7af",
+            "reference": "c766e95bec706cdd89903b1eda8afab7d7a6b7af",
             "shasum": ""
         },
         "require": {
@@ -4782,7 +4837,7 @@
         "suggest": {
             "ext-intl": "For best performance"
         },
-        "time": "2018-09-30T16:36:12+00:00",
+        "time": "2019-03-04T13:44:35+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -4825,17 +4880,17 @@
     },
     {
         "name": "symfony/polyfill-mbstring",
-        "version": "v1.10.0",
-        "version_normalized": "1.10.0.0",
+        "version": "v1.11.0",
+        "version_normalized": "1.11.0.0",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/polyfill-mbstring.git",
-            "reference": "c79c051f5b3a46be09205c73b80b346e4153e494"
+            "reference": "fe5e94c604826c35a32fa832f35bd036b6799609"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/c79c051f5b3a46be09205c73b80b346e4153e494",
-            "reference": "c79c051f5b3a46be09205c73b80b346e4153e494",
+            "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/fe5e94c604826c35a32fa832f35bd036b6799609",
+            "reference": "fe5e94c604826c35a32fa832f35bd036b6799609",
             "shasum": ""
         },
         "require": {
@@ -4844,11 +4899,11 @@
         "suggest": {
             "ext-mbstring": "For best performance"
         },
-        "time": "2018-09-21T13:07:52+00:00",
+        "time": "2019-02-06T07:57:58+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
-                "dev-master": "1.9-dev"
+                "dev-master": "1.11-dev"
             }
         },
         "installation-source": "dist",
@@ -4886,27 +4941,27 @@
     },
     {
         "name": "symfony/polyfill-php72",
-        "version": "v1.10.0",
-        "version_normalized": "1.10.0.0",
+        "version": "v1.11.0",
+        "version_normalized": "1.11.0.0",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/polyfill-php72.git",
-            "reference": "9050816e2ca34a8e916c3a0ae8b9c2fccf68b631"
+            "reference": "ab50dcf166d5f577978419edd37aa2bb8eabce0c"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/symfony/polyfill-php72/zipball/9050816e2ca34a8e916c3a0ae8b9c2fccf68b631",
-            "reference": "9050816e2ca34a8e916c3a0ae8b9c2fccf68b631",
+            "url": "https://api.github.com/repos/symfony/polyfill-php72/zipball/ab50dcf166d5f577978419edd37aa2bb8eabce0c",
+            "reference": "ab50dcf166d5f577978419edd37aa2bb8eabce0c",
             "shasum": ""
         },
         "require": {
             "php": ">=5.3.3"
         },
-        "time": "2018-09-21T13:07:52+00:00",
+        "time": "2019-02-06T07:57:58+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
-                "dev-master": "1.9-dev"
+                "dev-master": "1.11-dev"
             }
         },
         "installation-source": "dist",
@@ -5099,17 +5154,17 @@
     },
     {
         "name": "yiisoft/yii2",
-        "version": "2.0.16.1",
-        "version_normalized": "2.0.16.1",
+        "version": "2.0.17",
+        "version_normalized": "2.0.17.0",
         "source": {
             "type": "git",
             "url": "https://github.com/yiisoft/yii2-framework.git",
-            "reference": "089198cced57c4b8c9545ddc56001a1bd114b2dd"
+            "reference": "b56159228c3b4990e38cf41ddd69af27ab015bea"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/089198cced57c4b8c9545ddc56001a1bd114b2dd",
-            "reference": "089198cced57c4b8c9545ddc56001a1bd114b2dd",
+            "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/b56159228c3b4990e38cf41ddd69af27ab015bea",
+            "reference": "b56159228c3b4990e38cf41ddd69af27ab015bea",
             "shasum": ""
         },
         "require": {
@@ -5125,7 +5180,7 @@
             "php": ">=5.4.0",
             "yiisoft/yii2-composer": "~2.0.4"
         },
-        "time": "2019-02-28T07:03:06+00:00",
+        "time": "2019-03-22T21:26:26+00:00",
         "bin": [
             "yii"
         ],

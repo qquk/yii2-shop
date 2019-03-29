@@ -24,9 +24,12 @@
         "yiisoft/yii2-authclient": "^2.1",
         "kartik-v/yii2-widgets": "*",
         "kartik-v/yii2-field-range": "dev-master",
+        "kartik-v/yii2-widget-select2": "@dev",
+        "kartik-v/yii2-widget-fileinput": "@dev",
         "paulzi/yii2-nested-sets": "^1.1",
         "fishvision/yii2-migrate": "^1.0",
-        "filsh/yii2-oauth2-server": "^2.0"
+        "filsh/yii2-oauth2-server": "^2.0",
+        "mihaildev/yii2-ckeditor": "^1.0"
     },
     "require-dev": {
         "yiisoft/yii2-debug": "~2.0.0",

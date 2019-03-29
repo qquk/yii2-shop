@@ -9,21 +9,21 @@
 namespace shop\forms\manage\Shop\Product;
 
 
-use shop\entities\Shop\Characteristic;
-use shop\entities\Shop\Product;
+use shop\entities\Shop\Brand;
+use shop\entities\Shop\Product\Product;
 use shop\forms\CompositeForm;
-use shop\forms\Shop\MetaForm;
+use shop\forms\manage\Shop\MetaForm;
+use yii\helpers\ArrayHelper;
 
 /**
  * Class ProductCreateForm
  * @package shop\forms\manage\Shop\Product
  *
- * @property PriceForm $price
- * @property CategoriesForm $categories
  * @property TagsForm $tags
- * @property PhotosForm $photos
  * @property MetaForm $meta
- * @property ValueForm[] $values
+ * @property PriceForm $price
+ * @property QuantityForm $quantity
+ * @property CategoriesForm $categories
  *
  */
 class ProductCreateForm extends CompositeForm
@@ -32,33 +32,39 @@ class ProductCreateForm extends CompositeForm
     public $brandId;
     public $code;
     public $name;
+    public $description;
+    public $weight;
 
     public function __construct(array $config = [])
     {
-        $this->price = new PriceForm();
-        $this->categories = new CategoriesForm();
         $this->tags = new TagsForm();
-        $this->photos = new PhotosForm();
-        $this->values = array_map(function($characteristic){
-            return new ValueForm($characteristic);
-        }, Characteristic::find()->orderBy('sort')->all());
-
+        $this->meta = new MetaForm();
+        $this->price = new PriceForm();
+        $this->quantity = new QuantityForm();
+        $this->categories = new CategoriesForm();
         parent::__construct($config);
     }
 
     public function rules()
     {
         return[
-            [['brand_id', 'code', 'name'], 'required'],
+            [['brandId', 'code', 'name', 'weight'], 'required'],
             [['code', 'name'], 'string', 'max' => 255],
-            [['brand_id'], 'integer'],
+            [['description'], 'string'],
+            [['brandId'], 'integer'],
             [['code'], 'unique', 'targetClass' => Product::class],
+            ['weight', 'integer', 'min' => 0]
 
         ];
     }
 
     protected function internalForms(): array
     {
-        return ['price', 'meta', 'categories', 'tags', 'photos', 'values'];
+        return ['meta', 'tags', 'price', 'quantity', 'categories'];
+    }
+
+    public function brandList()
+    {
+        return ArrayHelper::map(Brand::find()->orderBy('name')->asArray()->all(), 'id', 'name');
     }
 }

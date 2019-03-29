@@ -1,20 +1,32 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Admin
- * Date: 08.09.2018
- * Time: 18:25
- */
 
 namespace shop\repositories\Shop;
 
-
 use shop\entities\Shop\Category;
+use shop\repositories\NotFoundException;
 
 class CategoryRepository
 {
-    use RepositoryTrait;
+    public function get($id): Category
+    {
+        if (!$category = Category::findOne($id)) {
+            throw new NotFoundException('Category is not found.');
+        }
+        return $category;
+    }
 
-    public $modelClass = Category::class;
+    public function save(Category $category): void
+    {
+        if (!$category->save()) {
+            throw new \RuntimeException('Saving error.');
+        }
+    }
+
+    public function remove(Category $category): void
+    {
+        if (!$category->delete()) {
+            throw new \RuntimeException('Removing error.');
+        }
+    }
 
 }
